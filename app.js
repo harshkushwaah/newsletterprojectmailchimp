@@ -62,7 +62,7 @@ app.post('/sucess' , (req , res)=>{
     res.redirect("/");
   
   });
-app.listen(3000,function(){
+app.listen(process.env.PORT,function(){
     console.log("server running");
 });
 
