@@ -54,15 +54,15 @@ response.on("data",function(data){
 });
 app.post('/failure' , (req , res)=>{
 
-  res.redirect("/");
+    res.sendFile(__dirname + "/index.html");
 
 });
-app.post('/sucess' , (req , res)=>{
+app.post('/success' , (req , res)=>{
 
-    res.redirect("/");
+    res.sendFile(__dirname + "/index.html");
   
   });
-app.listen(process.env.PORT,function(){
+app.listen(8080,function(){
     console.log("server running");
 });
 
